@@ -1,0 +1,111 @@
+Document
+|
+|--DOCTYPE: html
+|
+|--html (lang="en")
+   |
+   |--head
+   |  |
+   |  |--meta (charset="UTF-8")
+   |  |
+   |  |--meta (name="viewport", content="width=device-width, initial-scale=1.0")
+   |  |
+   |  |--title: Recipe Blog
+   |  |
+   |  |--link (rel="stylesheet", href="style_layout.css")
+   |
+   |--body
+      |
+      |--header
+      |  |
+      |  |--nav
+      |     |
+      |     |--ul
+      |        |
+      |        |--li
+      |        |  |
+      |        |  |--a (href="#", class="selected"): All Recipes
+      |        |
+      |        |--li
+      |        |  |
+      |        |  |--a (href="#"): Breakfast
+      |        |
+      |        |--li
+      |        |  |
+      |        |  |--a (href="#"): Lunch
+      |        |
+      |        |--li
+      |        |  |
+      |        |  |--a (href="#"): Dinner
+      |        |
+      |        |--li
+      |        |  |
+      |        |  |--a (href="#"): Desserts
+      |        |
+      |        |--li
+      |        |  |
+      |        |  |--a (href="#"): About Me
+      |        |
+      |        |--li
+      |           |
+      |           |--a (href="#"): Contact
+      |
+      |--main
+      |  |
+      |  |--h1: All Recipes
+      |  |
+      |  |--section (class="recipe-display")
+      |  |  |
+      |  |  |--article
+      |  |  |  |
+      |  |  |  |--img (src="img/veggies.jpg")
+      |  |  |  |
+      |  |  |  |--p: Ratatouille
+      |  |  |
+      |  |  |--article
+      |  |  |  |
+      |  |  |  |--img (src="img/dessert.jpg")
+      |  |  |  |
+      |  |  |  |--p: Pavlova
+      |  |  |
+      |  |  |--article
+      |  |     |
+      |  |     |--img (src="img/meat.jpg")
+      |  |     |
+      |  |     |--p: Meatballs
+      |  |
+      |  |--section (class="submit-recipe")
+      |     |
+      |     |--h2: Submit a Recipe
+      |     |
+      |     |--form (action="submit_form_here", method="post", enctype="multipart/form-data")
+      |        |
+      |        |--label (for="image"): Recipe Image:
+      |        |
+      |        |--input (type="file", id="image", name="recipeImage", required)
+      |        |
+      |        |--label (for="name"): Recipe Name:
+      |        |
+      |        |--input (type="text", id="name", name="recipeName", required)
+      |        |
+      |        |--label (for="description"): Description:
+      |        |
+      |        |--textarea (id="description", name="recipeDescription", rows="5", cols="50")
+      |        |
+      |        |--label (for="category"): Category:
+      |        |
+      |        |--select (id="category", name="recipeCategory")
+      |        |  |
+      |        |  |--option (value="breakfast"): Breakfast
+      |        |  |
+      |        |  |--option (value="lunch"): Lunch
+      |        |  |
+      |        |  |--option (value="dinner"): Dinner
+      |        |  |
+      |        |  |--option (value="desserts"): Desserts
+      |        |
+      |        |--button (type="submit"): Submit Recipe
+      |
+      |--footer
+         |
+         |--p: Recipe Blog © 2023
